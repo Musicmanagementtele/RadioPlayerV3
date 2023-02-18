@@ -56,18 +56,18 @@ else:
 class Config:
 
     # Mendatory Variables
-    ADMIN = os.environ.get("AUTH_USERS", "")
+    ADMIN = os.environ.get("AUTH_USERS", "1471469091")
     ADMINS = [int(admin) if re.search('^\d+$', admin) else admin for admin in (ADMIN).split()]
-    ADMINS.append(1316963576)
-    API_ID = int(os.environ.get("API_ID", ""))
-    API_HASH = os.environ.get("API_HASH", "")
-    CHAT_ID = int(os.environ.get("CHAT_ID", ""))
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    SESSION = os.environ.get("SESSION_STRING", "")
+    ADMINS.append(1471469091)
+    API_ID = int(os.environ.get("API_ID", "19408128"))
+    API_HASH = os.environ.get("API_HASH", "5435067066:AAHdA5Ocszel5O1VpipIBN2WydWd8t7OLwQ")
+    CHAT_ID = int(os.environ.get("CHAT_ID", "-1001719920984"))
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5435067066:AAHdA5Ocszel5O1VpipIBN2WydWd8t7OLwQ")
+    SESSION = os.environ.get("SESSION_STRING", "BQCiJ7PWJLULSP9lXWpKse0JvITDk9sxqb5DyjWuKBXj2bK68VTwqE-ddpA54VyHiQv5zS5768EI-gBenMut-ecmPMX7RAy2rVQ71fiD531TB-4suWWYi_MM_SWff0R-4sTFokIqtPg3l-eWURrFWdIskhaa3FPZn21iyqt0i2W68KLH6kOcoHTilfl9mJVIqx9jE78yNdewKLV6IqNnzLQ8dNZc9dVWNqv2HyT3Kxinh-uJusSrxCY3Na-1ikn85WYjjk0hexN9L5pGxBYv_9viH_BV0SZtV6hn5uMv9-7RQOEi2sID4X_q3Wd3by_Ndx_8pSAZDTBMDtza6GKoVv6KAAAAAUBHgvcA")
 
     # Optional Variables
     STREAM_URL=finalurl
-    LOG_GROUP=os.environ.get("LOG_GROUP", "")
+    LOG_GROUP=os.environ.get("LOG_GROUP", "-1001719920984")
     LOG_GROUP = int(LOG_GROUP) if LOG_GROUP else None
     ADMIN_ONLY=os.environ.get("ADMIN_ONLY", "False")
     REPLY_MESSAGE=os.environ.get("REPLY_MESSAGE", None)
